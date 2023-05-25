@@ -1,0 +1,32 @@
+
+step 1 - create folder project
+
+step 2 - install node & npm (from website)
+
+step 3 - initalize npm 
+         npm init
+
+step 4 - initalize express
+         npm install express --save
+
+step 5 - create file index.js in project folder
+
+step 6 - create folder public in project folder
+
+step 7 - create file index.html in public folder
+
+step 8 - Add These lines to index.js
+
+const express = require('express');
+const app = express();
+
+app.use(express.static('public'));
+
+app.listen(4000,()=>{
+    console.log("This application is running");
+})
+
+
+step 9 - Run the project 
+         
+         node index.js 
